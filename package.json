@@ -2,6 +2,7 @@
   "name": "ems-web-app-seat-time",
   "version": "0.0.4",
   "author": "Chris Spence",
+  "description": "This angular.io component starts a session timer that pauses after periods of inactivity or when the containg web browser loses focus.",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
