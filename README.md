@@ -9,6 +9,26 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Usage
 
+Module Implementation
+
+	import { NgModule } from '@angular/core';
+	import { BrowserModule } from '@angular/platform-browser';
+	import { AppComponent } from './app.component';
+	import { SeatTimeModule } from "ems-web-app-seat-time";
+
+	@NgModule({
+	  declarations: [
+	    AppComponent 
+	  ],
+	  imports: [
+	    BrowserModule,
+	    SeatTimeModule 
+	  ],
+	  providers: [],
+	  bootstrap: [ AppComponent ]
+	})
+	export class AppModule { }
+
 Add the following element to your Angular.io DOM where you deem appropriate.
 
 	<tracker [time]="0" [interval]="10" [timeout]="300" (tick)="onSeatTimeUpdate($event)"></tracker>
