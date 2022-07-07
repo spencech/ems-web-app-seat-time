@@ -1,6 +1,6 @@
 # EMS Web Application Components: Seat Time Tracker
 
-The Seat Time Angular.io module is authored for use within web applications developed by [Educational Media Solutions](https://educationalmediasolutions.com).
+The Seat Time Angular.io module is authored for use within [web applications](https://github.com/spencech/ems-web-app-template) developed by [Educational Media Solutions](https://educationalmediasolutions.com).
 
 This component starts a session timer that pauses after periods of inactivity or when the containg web browser loses focus (e.g., new tab opened, window minimized etc.)
 
