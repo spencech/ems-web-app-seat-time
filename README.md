@@ -6,7 +6,7 @@ Find the [web application template source code on GitHub](https://github.com/spe
 
 Find a [working example of this component here](https://ems-web-app.educationalmediasolutions.com).
 
-This component starts a session timer that pauses after periods of inactivity or when the containg web browser loses focus (e.g., new tab opened, window minimized etc.)
+This component starts a session timer that pauses after periods of inactivity or when the containing web browser loses focus (e.g., new tab opened, window minimized etc.)
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
