@@ -3,6 +3,8 @@
   "version": "0.0.7",
   "author": "Chris Spence (https://educationalmediasolutions.com)",
   "description": "This angular.io component starts a session timer that pauses after periods of inactivity or when the containg web browser loses focus.",
+  "funding": "https://paypal.me/spencech",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
@@ -29,6 +31,9 @@
     "timer",
     "tracker",
     "tracking",
-    "activity timer"
+    "activity timer",
+    "angular.io",
+    "angular",
+    "module"
   ]
 }
