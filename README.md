@@ -48,15 +48,39 @@ The above configuration starts the seat timer at zero, incrementing it every 10s
 Example component implementation that contains the &lt;tracker/&gt; node shown above in its template.
 	
 	import { Component } from '@angular/core';
+	import { SeatTimeService, SeatTimeStateChange } from "ems-web-app-seat-time";
+
 	@Component({
 	  selector: 'some-app-component',
 	  templateUrl: './app.component.html',
 	  styleUrls: ['./app.component.less']
 	})
 	export class SomeAppComponent {
-		constructor() {}
+		
+		constructor(private seatTime: SeatTimeService) {}
+		
 		public onSeatTimeUpdate(time: number) {
 			console.log(`updated time: ${time} seconds`);
+		}
+
+		//when paused, user activity will no longer restart the counter
+		//you must trigger a resume state change with one of the methods below
+		public pauseTimerIndefinitely() {
+			this.seatTime.updateState(SeatTimeStateChange.Pause);
+		}
+
+		//when paused, user activity will no longer restart the counter
+		//you must trigger a resume state change with one of the methods below
+		public resetTimerToZeroAndProgrammaticallyPause() {
+			this.seatTime.updateState(SeatTimeStateChange.ResetAndPause);
+		}
+
+		public resumeTimerFromProgrammaticPause() {
+			this.seatTime.updateState(SeatTimeStateChange.Resume);
+		}
+
+		public resetTimerToZeroAndResume() {
+			this.seatTime.updateState(SeatTimeStateChange.ResetAndResume);
 		}
 	}
 	
