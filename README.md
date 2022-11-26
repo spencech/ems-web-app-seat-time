@@ -59,6 +59,7 @@ Example component implementation that contains the &lt;tracker/&gt; node shown a
 			console.log(`updated time: ${time} seconds`);
 		}
 	}
+	
 
 
 ## Code scaffolding
