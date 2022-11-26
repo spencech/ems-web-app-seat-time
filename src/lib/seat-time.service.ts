@@ -12,7 +12,6 @@ export class SeatTimeService {
   public state = this.stateSource.asObservable();
 
   constructor() { }
-
   updateState(change: SeatTimeStateChange | null) {
     this.stateSource.next(change);
   }
