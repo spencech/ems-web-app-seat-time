@@ -82,7 +82,7 @@ export class SeatTimeComponent implements OnInit, OnDestroy {
     this.tick.emit(this.time);
   }  
 
-  private onStateChangeRequest(state: SeatTimeStateChange | null) {
+  private onStateChangeRequest = (state: SeatTimeStateChange | null) => {
     switch(state) {
       case SeatTimeStateChange.Pause:
           this.programmaticPause = true;
